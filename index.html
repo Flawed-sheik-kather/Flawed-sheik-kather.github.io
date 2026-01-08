@@ -14,9 +14,19 @@
 <h1>Hi, I'm a Cybersecurity Graduate</h1>
 <p>Welcome to my portfolio website.</p>
 
-    <a href="projects.html">
-        <button>View My Projects</button>
-    </a>
+<script>
+    function navigate(page) {
+        document.getElementById("loading").style.display = "flex";
+
+        setTimeout(function () {
+            window.location.href = page;
+        }, 800); // time for GIF to play
+    }
+</script>
+
+
+<button onclick="navigate('projects.html')">View Projects</button>
+
     
 <script>
     window.addEventListener("load", function () {
