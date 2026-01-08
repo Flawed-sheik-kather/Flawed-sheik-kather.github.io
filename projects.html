@@ -14,6 +14,16 @@
     <h1>My Projects</h1>
     <p>Here are some of my cybersecurity projects.</p>
 
+<script>
+    function navigate(page) {
+        document.getElementById("loading").style.display = "flex";
+
+        setTimeout(function () {
+            window.location.href = page;
+        }, 800); // time for GIF to play
+    }
+</script>
+
 <button onclick="navigate('index.html')">Home</button>
     
 <script>
