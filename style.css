@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+
+/* Home page styles */
+.home-page {
+    background-color: #2C2C2C;
+    color: #E4E4E4;
+}
+
+/* Projects page styles */
+.projects-page {
+    background-color: #2C2C2C;
+    color: #E4E4E4;
+}
+
+
 #loading {
     position: fixed;
     top: 0;
