@@ -37,3 +37,25 @@
     height: 150px;
     width: 150px; /* adjust if needed */
 }
+
+
+.linkedin-section {
+    padding: 2rem;
+}
+
+.linkedin-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+}
+
+.linkedin-card {
+    min-width: 360px;   /* THIS IS CRITICAL */
+    max-width: 360px;
+
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
