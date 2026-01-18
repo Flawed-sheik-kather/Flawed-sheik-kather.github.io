@@ -18,7 +18,7 @@
 }
 
 .button {
-  background-color: #249E94;
+  background-color: #26CCC2;
   border: none;
   color: #F3F4F4;
   transition: background-color 0.3s ease;
@@ -32,7 +32,7 @@
 }
 
 .button:hover {
-  background-color: #3BC1A8;
+  background-color: #6AECE1;
   cursor: pointer;           
 }
 
