@@ -17,6 +17,24 @@
     color: #F3F4F4;
 }
 
+.button {
+  background-color: #1D546D;
+  border: none;
+  color: #F3F4F4;
+  transition: background-color 0.3s ease;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5F9598;
+  cursor: pointer;           
+}
 
 #loading {
     position: fixed;
