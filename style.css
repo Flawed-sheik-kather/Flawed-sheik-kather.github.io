@@ -46,12 +46,12 @@
 
 /* Desktop hover → play GIF */
 .topnav .icon:hover .hamburger-icon {
-  content: url("Media/Gifs_and_animations/hamburger_menu.gif");
+  content: url("Media/Gifs_and_animations/hamburger_menu_bigger.gif");
 }
 
 /* Mobile tap → show GIF when menu is open */
 .topnav.responsive .hamburger-icon {
-  content: url("Media/Gifs_and_animations/hamburger_menu.gif");
+  content: url("Media/Gifs_and_animations/hamburger_menu_bigger.gif");
 }
 
 /* Home page styles */
