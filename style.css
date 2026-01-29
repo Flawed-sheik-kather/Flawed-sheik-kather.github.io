@@ -8,7 +8,6 @@
 .topnav {
   background-color: #1D546D;
   overflow: hidden;
-  margin: 4px 2px;
 }
 
 /* Style the links inside the navigation bar */
@@ -20,6 +19,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin: 4px 2px;
 }
 
 /* Change the color of links on hover */
