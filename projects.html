@@ -30,32 +30,13 @@ function myFunction() {
   }
 }
 </script>
-    
-    <!-- Loading Screen -->
-<div id="loading">
-    <img src="Spamton_loading_cursor.gif" alt="Loading...">
-</div>
 
     <h1>My Projects</h1>
     <p>Here are some of my cybersecurity projects.</p>
 
-<script>
-    function navigate(page) {
-        document.getElementById("loading").style.display = "flex";
-
-        setTimeout(function () {
-            window.location.href = page;
-        }, 800); // time for GIF to play
-    }
-</script>
 
 <button class="button" onclick="navigate('index.html')">Home</button>
     
-<script>
-    window.addEventListener("load", function () {
-        document.getElementById("loading").style.display = "none";
-    });
-</script>
     
 </body>
 </html>
