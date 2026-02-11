@@ -166,10 +166,11 @@
 }
 
 .hero-name {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  color: #F4EDEA;
-  text-shadow: 0 0 10px rgba(95, 149, 152, 0.8);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: #5F9598;
+  text-shadow: 0 0 10px rgba(95, 149, 152, 0.9);
+  line-height: 1.4;
 }
 
 .hero-degree {
