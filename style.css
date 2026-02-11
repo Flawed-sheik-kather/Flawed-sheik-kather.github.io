@@ -166,18 +166,18 @@
 }
 
 .hero-name {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
+  font-family: 'VT323', monospace;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
   color: #5F9598;
-  text-shadow: 0 0 10px rgba(95, 149, 152, 0.9);
-  line-height: 1.4;
+  text-shadow: 0 0 15px rgba(95, 149, 152, 0.8);
 }
 
 .hero-degree {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: #5F9598;
-  letter-spacing: 2px;
+  font-family: 'VT323', monospace;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  color: #F4EDEA;
 }
 
 /* RIGHT SIDE IMAGE */
