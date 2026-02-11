@@ -182,3 +182,32 @@
     text-align: center;
   }
 }
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner container (floating box) */
+.about-container {
+  max-width: 900px;
+  width: 90%;
+  background-color: #1D546D;
+  border-radius: 25px;
+  padding: 60px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #F3F4F4;
+}
