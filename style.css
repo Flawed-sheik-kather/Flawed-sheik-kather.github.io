@@ -6,7 +6,7 @@
 
 /* Add a dark green background color to the top navigation */
 .topnav {
-  background-color: #1D546D;
+  background-color: #06BCC1;
   overflow: hidden;
 }
 
@@ -23,13 +23,13 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #5F9598;
+  background-color: #C5D8D1;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #5F9598;
+  background-color: #F4D1AE;
   color: white;
 }
 
@@ -56,14 +56,14 @@
 
 /* Home page styles */
 .home-page {
-    background-color: #061E29;
-    color: #F3F4F4;
+    background-color: #12263A;
+    color: #F4EDEA;
 }
 
 /* Projects page styles */
 .projects-page {
-    background-color: #061E29;
-    color: #F3F4F4;
+    background-color: #12263A;
+    color: #F4EDEA;
 }
 
 .button {
