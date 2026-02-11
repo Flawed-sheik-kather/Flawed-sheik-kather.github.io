@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Pixel font -->
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="home-page">
 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->    
+    <!-- NAVBAR -->
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="Media/Images/hamburger_menu_bigger.png" alt="Menu" class="hamburger-icon">
-      </a>
+        <a href="#hero" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="Media/Images/hamburger_menu_bigger.png" alt="Menu" class="hamburger-icon">
+        </a>
     </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-card">
+            <div class="hero-text">
+                <h1 class="hero-name">Sheik Kather Fahima</h1>
+                <h2 class="hero-degree">BSc (Hons) Cyber Security</h2>
+            </div>
+            <div class="hero-image">
+                <img src="Media/Images/Hero-pic-smaller.jpeg" alt="Your Name">
+            </div>
+        </div>
+    </section>
 
+    <!-- Optional contact section anchor -->
+    <section id="contact"></section>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-card">
+    <!-- JavaScript for hamburger toggle -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     
-    <div class="hero-text">
-      <h1 class="hero-name">Sheik Kather Fahima</h1>
-      <h2 class="hero-degree">B.Sc. (Hons) Cyber Security</h2>
-    </div>
-
-    <div class="hero-image">
-      <img src="Media/Images/Hero-pic-smaller.jpeg" alt="Your Name">
-    </div>
-
-  </div>
-</section>
-
 </body>
+</html>
