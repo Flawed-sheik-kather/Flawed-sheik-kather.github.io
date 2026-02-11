@@ -6,7 +6,7 @@
 
 /* Add a dark green background color to the top navigation */
 .topnav {
-  background-color: #C5D8D1;
+  background-color: #1D546D;
   overflow: hidden;
 }
 
@@ -23,13 +23,13 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #F4EDEA;
+  background-color: #5F9598;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #F4D1AE;
+  background-color: #5F9598;
   color: white;
 }
 
