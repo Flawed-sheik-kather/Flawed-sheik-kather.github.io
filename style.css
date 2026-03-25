@@ -15,6 +15,7 @@ body.home-page {
     background-size: 40px 40px;
     background-repeat: repeat;
     font-family: 'VT323', monospace;
+    text-align: center;
     scroll-behavior: smooth;
     position: relative;
     padding-top: 70px;
