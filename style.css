@@ -196,7 +196,7 @@ body::after {
 /* --------------------- SECTIONS --------------------- */
 
 .hero, .about, .projects {
-    min-height: 90vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
