@@ -233,6 +233,13 @@ body::after {
     color: #F4EDEA;
 }
 
+.hero-normal_text {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    color: #F4EDEA;
+}
+
 /* --------------------- CV Downloads --------------------- */
 .cv-button {
     font-family: 'VT323', monospace;
