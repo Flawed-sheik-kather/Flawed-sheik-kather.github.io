@@ -19,22 +19,6 @@ body.home-page {
     position: relative;
 }
 
-/* CRT scanline effect */
-body::after {
-    content: "";
-    pointer-events: none;
-    position: fixed;
-    inset: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.02),
-        rgba(255,255,255,0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
-    z-index: 9999;
-    mix-blend-mode: overlay;
-}
 
 /* --------------------- NAVBAR --------------------- */
 .topnav {
