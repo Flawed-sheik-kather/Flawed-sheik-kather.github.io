@@ -47,6 +47,10 @@ body.home-page {
     align-items: center;
     border-bottom: 3px solid #5F9598;
     box-shadow: 0 0 20px rgba(95,149,152,0.5);
+    position: fixed; /* ← add this */
+    top: 0;          /* ← and this */
+    left: 0;         /* ← and this */
+    right: 0;        /* ← and this */
     position: relative;
     z-index: 100;
     flex-wrap: wrap; /* ← allows links to wrap below on mobile */
