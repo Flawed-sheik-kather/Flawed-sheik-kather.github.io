@@ -51,7 +51,6 @@ body.home-page {
     top: 0;          /* ← and this */
     left: 0;         /* ← and this */
     right: 0;        /* ← and this */
-    position: relative;
     z-index: 100;
     flex-wrap: wrap; /* ← allows links to wrap below on mobile */
 }
