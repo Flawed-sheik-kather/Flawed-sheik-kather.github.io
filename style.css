@@ -70,12 +70,23 @@ body::after {
     color: #0A1929;
 }
 
+.nav-tagline {
+    margin-right: auto;
+    padding: 0 20px;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: rgba(95, 149, 152, 0.6);
+    font-style: italic;
+    pointer-events: none;
+    display: none;
+}
+
 /* --------------------- HAMBURGER --------------------- */
 .topnav .icon {
     display: none;
     cursor: pointer;
-    /* No absolute positioning — lives in normal flow */
-    margin-left: auto; /* pushes it to the right within the flex row */
+    margin-left: auto; 
     padding: 15px;
 }
 
@@ -104,7 +115,6 @@ body::after {
     .topnav .icon {
         display: flex;
         align-items: center;
-        /* Sits in normal flex flow — no absolute needed */
     }
 
     /* When menu is open */
