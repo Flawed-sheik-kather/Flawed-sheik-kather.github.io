@@ -229,16 +229,15 @@ body::after {
 
 .hero-degree {
     font-family: 'VT323', monospace;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     letter-spacing: 4px;
     color: #F4EDEA;
 }
 
-.hero-normal_text {
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    letter-spacing: 4px;
-    color: #F4EDEA;
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --------------------- CV Downloads --------------------- */
