@@ -173,7 +173,7 @@ body::after {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    .split-card,{
+    .split-card{
         flex-direction: column;
         height: auto;
     }
