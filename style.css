@@ -229,9 +229,11 @@ body::after {
 .about {
     min-height: 70vh;
     display: flex;
-    padding: 20px;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* --------------------- CV Downloads --------------------- */
