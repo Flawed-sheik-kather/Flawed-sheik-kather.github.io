@@ -194,6 +194,7 @@ body::after {
         overflow: hidden;
         margin-top: 30px;
         flex-shrink: 0;
+        margin-bottom: 10px;
     }
 
     .split-card__image img {
@@ -311,6 +312,15 @@ body::after {
     border: 4px solid #5F9598;
     box-shadow: 8px 8px 0px #5F9598, 0 0 30px rgba(95,149,152,0.4);
     padding: 50px;
+    margin-bottom: 10px;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Float animation */
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
 }
 
 .skills-card .hero-name {
