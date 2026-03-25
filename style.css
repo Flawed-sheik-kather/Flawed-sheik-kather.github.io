@@ -202,21 +202,13 @@ body::after {
 /* --------------------- SECTIONS --------------------- */
 
 .hero {
-    min-height: 30vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    padding: 20px;
     position: relative;
     overflow: hidden;
-}
-
-.CV {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    min-height: auto;
 }
 
 .hero-name {
@@ -235,8 +227,9 @@ body::after {
 }
 
 .about {
-    min-height: 10vh;
+    min-height: 70vh;
     display: flex;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 }
