@@ -201,7 +201,7 @@ body::after {
 /* --------------------- SECTIONS --------------------- */
 
 .hero {
-    min-height: 90vh;
+    min-height: calc(100vh - 150px);;
     display: flex;
     justify-content: center;
     align-items: center;
