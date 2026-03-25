@@ -218,6 +218,13 @@ body::after {
     text-shadow: 0 0 15px rgba(95, 149, 152, 0.8);
 }
 
+.hero-degree {
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    color: #F4EDEA;
+}
+
 /* --------------------- PROJECTS PAGE --------------------- */
 .projects-page {
     background-color: #12263A;
