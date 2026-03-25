@@ -179,22 +179,18 @@ body::after {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    .split-card{
+    .split-card {
         flex-direction: column;
         height: auto;
     }
 
-    .split-card__text,
     .split-card__image {
-        width: 100%;
-    }
-
-    .split-card__image {
-        height: 300px;
+        display: none; /* hide image on mobile */
     }
 
     .split-card__text {
-        padding: 40px;
+        width: 100%;
+        padding: 30px;
         text-align: center;
     }
 }
