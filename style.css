@@ -107,19 +107,19 @@ body::after {
 
     /* When menu is open */
     .topnav.responsive {
-        flex-direction: row;        /* ← keep it as a row so icon stays top-right */
+        flex-direction: row;        
         flex-wrap: wrap;
         align-items: center;
     }
 
     .topnav.responsive .icon {
-        order: -1;                  /* ← icon always renders first in the row */
+        order: -1;                  
         margin-left: auto;
     }
 
     .topnav.responsive a:not(.icon) {
         display: block;
-        width: 100%;                /* ← links take full width below the icon row */
+        width: 100%;                
         text-align: left;
         padding: 15px 20px;
         border-top: 1px solid rgba(95, 149, 152, 0.2);
@@ -138,11 +138,6 @@ body::after {
     position: relative;
     box-shadow: 8px 8px 0px #5F9598, 0 0 30px rgba(95,149,152,0.4);
     animation: float 6s ease-in-out infinite;
-}
-
-/* Flip image to the left */
-.split-card--reverse {
-    flex-direction: row-reverse;
 }
 
 /* No image — text takes full width */
@@ -178,8 +173,7 @@ body::after {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    .split-card,
-    .split-card--reverse {
+    .split-card,{
         flex-direction: column;
         height: auto;
     }
@@ -201,7 +195,7 @@ body::after {
 
 /* --------------------- SECTIONS --------------------- */
 
-.hero, .about, .projects, .contact {
+.hero, .about, .projects, .CV {
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -225,6 +219,24 @@ body::after {
     color: #F4EDEA;
 }
 
+/* --------------------- CV Downloads --------------------- */
+.cv-button {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #0A1929;
+    background-color: #5F9598;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 2px solid #5F9598;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.cv-button:hover {
+    background-color: transparent;
+    color: #5F9598;
+}
 /* --------------------- PROJECTS PAGE --------------------- */
 .projects-page {
     background-color: #12263A;
