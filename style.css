@@ -135,7 +135,7 @@ body::after {
 .split-card {
     width: 85%;
     max-width: 1000px;
-    height: 400px;
+    height: 550px; /* was 400px, bump this up */
     background-color: #0F1E2E;
     border: 4px solid #5F9598;
     display: flex;
@@ -201,7 +201,7 @@ body::after {
 /* --------------------- SECTIONS --------------------- */
 
 .hero {
-    min-height: calc(100vh - 150px);;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
