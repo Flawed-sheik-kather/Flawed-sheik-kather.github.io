@@ -17,6 +17,8 @@ body.home-page {
     font-family: 'VT323', monospace;
     scroll-behavior: smooth;
     position: relative;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 
 /* CRT scanline effect */
@@ -33,10 +35,6 @@ body::after {
         rgba(0, 0, 0, 0.15) 4px
     );
     z-index: 9999;
-}
-
-body.home-page {
-    padding-bottom: 80px; /* adjust to match hire-bar height */
 }
 
 /* --------------------- NAVBAR --------------------- */
