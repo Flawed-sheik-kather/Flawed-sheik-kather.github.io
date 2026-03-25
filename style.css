@@ -70,18 +70,6 @@ body::after {
     color: #0A1929;
 }
 
-.nav-tagline {
-    margin-right: auto;
-    padding: 0 20px;
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: rgba(95, 149, 152, 0.6);
-    font-style: italic;
-    pointer-events: none;
-    display: none;
-}
-
 /* --------------------- HAMBURGER --------------------- */
 .topnav .icon {
     display: none;
