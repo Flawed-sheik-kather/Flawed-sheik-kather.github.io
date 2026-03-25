@@ -200,8 +200,8 @@ body::after {
 
 /* --------------------- SECTIONS --------------------- */
 
-.hero, .about, .projects {
-    min-height: 40vh;
+.hero {
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
