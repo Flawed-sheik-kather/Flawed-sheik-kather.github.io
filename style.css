@@ -328,7 +328,7 @@ body::after {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    align-items: center; /* change this to center */
+    align-items: flex-start;
 }
 
 .skill-category__title {
@@ -336,7 +336,7 @@ body::after {
     font-size: 1.2rem;
     letter-spacing: 2px;
     color: #5F9598;
-    align-self: center; /* ← add this */
+    align-self: flex-start;
 }
 
 .skill-tags {
