@@ -45,6 +45,7 @@ body::after {
     box-shadow: 0 0 20px rgba(95,149,152,0.5);
     position: relative;
     z-index: 100;
+    flex-wrap: wrap; /* ← allows links to wrap below on mobile */
 }
 
 .topnav a {
@@ -69,51 +70,61 @@ body::after {
     color: #0A1929;
 }
 
-/* Hamburger icon */
+/* --------------------- HAMBURGER --------------------- */
 .topnav .icon {
     display: none;
-    position: absolute;
-    right: 15px;
     cursor: pointer;
+    /* No absolute positioning — lives in normal flow */
+    margin-left: auto; /* pushes it to the right within the flex row */
+    padding: 15px;
 }
 
 .hamburger-icon {
     width: 30px;
     height: 18px;
     cursor: pointer;
+    display: block;
 }
 
-/* Desktop hover → GIF */
 .topnav .icon:hover .hamburger-icon {
     content: url("Media/Gifs_and_animations/hamburger_menu_bigger.gif");
 }
 
-/* Mobile menu open → GIF */
 .topnav.responsive .hamburger-icon {
     content: url("Media/Gifs_and_animations/hamburger_menu_bigger.gif");
 }
 
 /* --------------------- MOBILE NAV --------------------- */
 @media screen and (max-width: 768px) {
-    .topnav a { display: none; }
-    .topnav a.icon { display: block; }
+    /* Hide nav links, show hamburger */
+    .topnav a:not(.icon) {
+        display: none;
+    }
 
+    .topnav .icon {
+        display: flex;
+        align-items: center;
+        /* Sits in normal flex flow — no absolute needed */
+    }
+
+    /* When menu is open */
     .topnav.responsive {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;        /* ← keep it as a row so icon stays top-right */
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    .topnav.responsive a {
+    .topnav.responsive .icon {
+        order: -1;                  /* ← icon always renders first in the row */
+        margin-left: auto;
+    }
+
+    .topnav.responsive a:not(.icon) {
         display: block;
-        width: 100%;
+        width: 100%;                /* ← links take full width below the icon row */
         text-align: left;
-        padding-left: 20px;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
+        padding: 15px 20px;
+        border-top: 1px solid rgba(95, 149, 152, 0.2);
     }
 }
 
