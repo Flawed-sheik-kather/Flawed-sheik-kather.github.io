@@ -195,17 +195,23 @@ body::after {
 
 /* --------------------- SECTIONS --------------------- */
 
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
 .about, .projects, .CV {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px;
+    padding: 40px 20px;
     position: relative;
     overflow: hidden;
-
-.hero {
-    min-height: 100vh;
-    padding: 40px 20px;
 }
 
 .hero-name {
