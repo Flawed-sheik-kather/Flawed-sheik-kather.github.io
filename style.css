@@ -199,34 +199,6 @@ body::after {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .split-card,
-    .split-card--reverse {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .split-card__text,
-    .split-card__image {
-        width: 100%;
-    }
-
-    .split-card__image {
-        height: 300px;
-        order: -1; /* image always on top on mobile */
-    }
-
-    .split-card__text {
-        padding: 40px;
-        text-align: center;
-    }
-
-    /* text-only card on mobile */
-    .split-card--text-only .split-card__text {
-        padding: 30px 20px;
-    }
-}
-
 /* --------------------- SECTIONS (just centering, no card styles) --------------------- */
 .hero, .about, .projects, .contact {
     min-height: 90vh;
