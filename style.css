@@ -126,18 +126,8 @@ body::after {
     }
 }
 
-/* --------------------- HERO SECTION --------------------- */
-.hero {
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-card {
+/* --------------------- SPLIT CARD (reusable) --------------------- */
+.split-card {
     width: 85%;
     max-width: 1000px;
     height: 400px;
@@ -150,14 +140,17 @@ body::after {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Float animation */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
-    100% { transform: translateY(0px); }
+/* Flip image to the left */
+.split-card--reverse {
+    flex-direction: row-reverse;
 }
 
-.hero-text {
+/* No image — text takes full width */
+.split-card--text-only .split-card__text {
+    width: 100%;
+}
+
+.split-card__text {
     width: 60%;
     padding: 60px;
     display: flex;
@@ -165,38 +158,84 @@ body::after {
     justify-content: center;
 }
 
-.hero-name {
-    font-family: 'VT323', monospace;
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-    color: #5F9598;
-    text-shadow: 0 0 15px rgba(95, 149, 152, 0.8);
-}
-
-.hero-degree {
-    font-family: 'VT323', monospace;
-    font-size: 1.6rem;
-    letter-spacing: 4px;
-    color: #F4EDEA;
-}
-
-.hero-image {
+.split-card__image {
     width: 40%;
     height: 100%;
 }
 
-.hero-image img {
+.split-card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Mobile hero */
+/* Float animation */
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Mobile */
 @media screen and (max-width: 768px) {
-    .hero-card { flex-direction: column; height: auto; }
-    .hero-text, .hero-image { width: 100%; }
-    .hero-image { height: 300px; }
-    .hero-text { padding: 40px; text-align: center; }
+    .split-card,
+    .split-card--reverse {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .split-card__text,
+    .split-card__image {
+        width: 100%;
+    }
+
+    .split-card__image {
+        height: 300px;
+    }
+
+    .split-card__text {
+        padding: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .split-card,
+    .split-card--reverse {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .split-card__text,
+    .split-card__image {
+        width: 100%;
+    }
+
+    .split-card__image {
+        height: 300px;
+        order: -1; /* image always on top on mobile */
+    }
+
+    .split-card__text {
+        padding: 40px;
+        text-align: center;
+    }
+
+    /* text-only card on mobile */
+    .split-card--text-only .split-card__text {
+        padding: 30px 20px;
+    }
+}
+
+/* --------------------- SECTIONS (just centering, no card styles) --------------------- */
+.hero, .about, .projects, .contact {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* --------------------- PROJECTS PAGE --------------------- */
