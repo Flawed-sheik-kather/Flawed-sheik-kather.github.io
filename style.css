@@ -195,7 +195,7 @@ body::after {
 
 /* --------------------- SECTIONS --------------------- */
 
-.hero, .about, .projects, .CV {
+.hero, .about, .projects {
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -205,6 +205,13 @@ body::after {
     overflow: hidden;
 }
 
+.CV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    min-height: auto;
+}
 
 .hero-name {
     font-family: 'VT323', monospace;
