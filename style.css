@@ -199,7 +199,8 @@ body::after {
     }
 }
 
-/* --------------------- SECTIONS (just centering, no card styles) --------------------- */
+/* --------------------- SECTIONS --------------------- */
+
 .hero, .about, .projects, .contact {
     min-height: 90vh;
     display: flex;
@@ -208,6 +209,20 @@ body::after {
     padding: 40px 20px;
     position: relative;
     overflow: hidden;
+
+.hero-name {
+    font-family: 'VT323', monospace;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    color: #5F9598;
+    text-shadow: 0 0 15px rgba(95, 149, 152, 0.8);
+}
+
+.hero-degree {
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    color: #F4EDEA;
 }
 
 /* --------------------- PROJECTS PAGE --------------------- */
