@@ -35,6 +35,10 @@ body::after {
     z-index: 9999;
 }
 
+body.home-page {
+    padding-bottom: 80px; /* adjust to match hire-bar height */
+}
+
 /* --------------------- NAVBAR --------------------- */
 .topnav {
     background-color: #0A1929;
@@ -246,6 +250,38 @@ body::after {
     background-color: transparent;
     color: #5F9598;
 }
+
+/* --------------------- HIRE BAR --------------------- */
+.hire-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0A1929;
+    border-top: 3px solid #5F9598;
+    box-shadow: 0 0 20px rgba(95,149,152,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    z-index: 998;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #5F9598;
+}
+
+/* Mobile — stack vertically */
+@media screen and (max-width: 768px) {
+    .hire-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+        font-size: 1.3rem;
+    }
+}
+
 /* --------------------- PROJECTS PAGE --------------------- */
 .projects-page {
     background-color: #12263A;
