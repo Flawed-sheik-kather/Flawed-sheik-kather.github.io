@@ -247,6 +247,16 @@ body::after {
     overflow: hidden;
 }
 
+.project {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
 /* --------------------- CV Downloads --------------------- */
 .cv-button {
     font-family: 'VT323', monospace;
