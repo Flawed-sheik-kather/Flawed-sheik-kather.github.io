@@ -22,6 +22,23 @@ body.home-page {
     padding-bottom: 80px;
 }
 
+body.projects-page {
+    min-height: 100vh;
+    background-color: #081421;
+    color: #F4EDEA;
+    background-image:
+        linear-gradient(rgba(95,149,152,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(95,149,152,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    scroll-behavior: smooth;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
 /* CRT scanline effect */
 body::after {
     content: "";
