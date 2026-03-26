@@ -257,6 +257,24 @@ body::after {
     overflow: hidden;
 }
 
+.contact {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap; /* stacks on mobile */
+}
+
 /* --------------------- CV Downloads --------------------- */
 .cv-button {
     font-family: 'VT323', monospace;
