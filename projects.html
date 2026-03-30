@@ -58,10 +58,15 @@
             try {
                 const response = await fetch('https://api.github.com/users/Flawed-sheik-kather/repos?sort=updated&per_page=100');
                 const repos = await response.json();
+                
+                console.log('Total repos found:', repos.length);
+                console.log('First repo:', repos[0]);
 
                 loading.remove();
 
                 repos.forEach((repo, index) => {
+                    console.log('Building card for:', repo.name);
+                    
                     const config = projectConfig[repo.name] || {};
                     const hasImage = !!config.image;
                     const isReversed = index % 2 !== 0;
@@ -76,33 +81,24 @@
 
                     card.innerHTML = `
                         <div class="split-card__text">
-                            <div class="project-entry__header">
-                                <span class="hero-name">> ${repo.name.replace(/-/g, ' ')}</span>
-                                ${repo.language ? `<span class="project-entry__lang">${repo.language}</span>` : ''}
-                            </div>
-                            <p class="hero-degree" style="margin-top: 15px;">${repo.description || ''}</p>
-                            ${config.extraDesc ? `<p class="hero-degree" style="margin-top: 10px;">${config.extraDesc}</p>` : ''}
-                            <div class="project-entry__links">
-                                <a href="${repo.html_url}" target="_blank" class="cv-button">View on GitHub</a>
-                                ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="cv-button">Live Demo</a>` : ''}
-                            </div>
+                            <p class="hero-name">${repo.name}</p>
                         </div>
-                        ${hasImage ? `
-                        <div class="split-card__image">
-                            <img src="${config.image}" alt="${repo.name}">
-                        </div>` : ''}
                     `;
 
                     section.appendChild(card);
                     container.appendChild(section);
+                    
+                    console.log('Card appended for:', repo.name);
                 });
 
             } catch (error) {
-                loading.textContent = 'Failed to load projects. Please try again later.';
+                console.log('Error:', error);
+                loading.textContent = 'Error: ' + error.message;
             }
         }
 
         loadProjects();
+        
     </script>
 </body>
 </html>
