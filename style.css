@@ -443,6 +443,7 @@ body::after {
 
 .project-entry__header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
