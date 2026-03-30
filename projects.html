@@ -32,6 +32,80 @@
     </section>
 
 
+    <script src="script.js"></script>
+    <script>
+        // Add your project images and extra info here
+        // Key must match your GitHub repo name exactly
+        const projectConfig = {
+            'Malware_Analysis_AI_Tool_with_explainability': {
+                extraDesc: 'Any extra detail you want to add.'
+            },
+            'Garbage_Detection_AI_app': {
+                extraDesc: ''
+            }
+            'GPA_Calculator_app': {
+                extraDesc: ''
+            }
+            'Flawed-sheik-kather.github.io': {
+                extraDesc: ''
+            }
+        };
+
+        async function loadProjects() {
+            const container = document.getElementById('projects-container');
+            const loading = document.getElementById('loading');
+
+            try {
+                const response = await fetch('https://api.github.com/users/Flawed-sheik-kather/repos?sort=updated&per_page=100');
+                const repos = await response.json();
+
+                loading.remove();
+
+                repos.forEach((repo, index) => {
+                    const config = projectConfig[repo.name] || {};
+                    const hasImage = !!config.image;
+                    const isReversed = index % 2 !== 0;
+
+                    const section = document.createElement('section');
+                    section.classList.add('project-entry');
+
+                    const card = document.createElement('div');
+                    card.classList.add('split-card');
+                    if (isReversed) card.classList.add('split-card--reverse');
+                    if (!hasImage) card.classList.add('split-card--text-only');
+
+                    card.innerHTML = `
+                        <div class="split-card__text">
+                            <div class="project-entry__header">
+                                <span class="hero-name">> ${repo.name.replace(/-/g, ' ')}</span>
+                                ${repo.language ? `<span class="project-entry__lang">${repo.language}</span>` : ''}
+                            </div>
+                            <p class="hero-degree" style="margin-top: 15px;">${repo.description || ''}</p>
+                            ${config.extraDesc ? `<p class="hero-degree" style="margin-top: 10px;">${config.extraDesc}</p>` : ''}
+                            <div class="project-entry__links">
+                                <a href="${repo.html_url}" target="_blank" class="cv-button">View on GitHub</a>
+                                ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="cv-button">Live Demo</a>` : ''}
+                            </div>
+                        </div>
+                        ${hasImage ? `
+                        <div class="split-card__image">
+                            <img src="${config.image}" alt="${repo.name}">
+                        </div>` : ''}
+                    `;
+
+                    section.appendChild(card);
+                    container.appendChild(section);
+                });
+
+            } catch (error) {
+                loading.textContent = 'Failed to load projects. Please try again later.';
+            }
+        }
+
+        loadProjects();
+    </script>
+</body>
+</html>
 
 <script>
 function myFunction() {
