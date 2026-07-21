@@ -420,6 +420,10 @@ body::after {
     .split-card__text {
         padding: 20px 15px;
     }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* --------------------- PROJECTS PAGE --------------------- */
