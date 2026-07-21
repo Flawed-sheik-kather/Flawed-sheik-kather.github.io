@@ -405,6 +405,11 @@ body::after {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .hero-name {
+        font-size: 2rem;
+        line-height: 1.2;
+        word-break: break-word;
+    }
     .skills-card {
         padding: 30px 20px;
     }
