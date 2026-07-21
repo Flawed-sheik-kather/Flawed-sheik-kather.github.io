@@ -461,6 +461,8 @@ body::after {
 
 .project-entry__links {
     display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 25px;
